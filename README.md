@@ -1,6 +1,6 @@
 # Python Extension Pack for AI Developers
 
-This extension pack packages some of the most popular (and some of my favorite) Python extensions. If you like it, please leave your `Rating & Review` and share with your friends. If you know any extension that is good for Angular development, just let me know by [creating an issue](https://github.com/doggy8088/python-extension-pack/issues).
+This extension pack packages some of the most popular (and some of my favorite) Python extensions. If you like it, please leave your `Rating & Review` and share with your friends. If you know any extension that is good for Angular development, just let me know by [creating an issue](https://github.com/doggy8088/python-extension-pack-for-ai-developers/issues).
 
 ## Extensions Included
 
@@ -48,5 +48,46 @@ This extension pack packages some of the most popular (and some of my favorite) 
 
     A Visual Studio Code extension with support for the Ruff linter.
 
+## The VS Code User Settings for Newbies
+
+```json
+{
+    "workbench.sideBar.location": "right",
+
+    "files.autoGuessEncoding": true,
+    "files.trimTrailingWhitespace": true,
+    "files.defaultLanguage": "${activeEditorLanguage}",
+
+    "editor.codeLens": true,
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "on",
+    "editor.tabCompletion": "on",
+    "editor.cursorSmoothCaretAnimation": "on",
+
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+
+    "terminal.integrated.showExitAlert": false,
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+
+    "notebook.formatOnSave.enabled": false,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+    },
+
+    "git.autofetch": true,
+    "git.enableSmartCommit": true
+}
+```
 
 **Enjoy!**
